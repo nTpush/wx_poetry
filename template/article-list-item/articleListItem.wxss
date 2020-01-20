@@ -1,0 +1,28 @@
+.article__list__item {
+  display: flex;
+  background: #fff;
+  width: 100%;
+}
+.article__list__item__image image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 15rpx;
+}
+.article__list__item__info {
+   text-align: left;
+   width: 100%;
+}
+.article__list__item__info__created {
+  color: #ABAAAB;
+  line-height: 60rpx;
+  font-size: 14px;
+}
+.article__list__item__info__author {
+   font-size: 12px;
+   color: #ABAAAB;
+}
+.article__list__item__info__author view {
+  text-align: right;
+  margin-right: 10rpx;
+  color: #CBB98C;
+}

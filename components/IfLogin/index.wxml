@@ -1,0 +1,19 @@
+<view wx:if="{{isss}}">
+    <view class="wx_iflogin_container {{isShow? 'if_hide' :'if_show'}}" >
+
+    <view class="content_method"> 
+        <view class="tip">猜你喜欢:</view>
+       <view class="content_method_item {{isShow? 'hiden' :'show'}}" 
+       bindtap="jump"
+       wx:for="{{list}}" wx:for-index="index" wx:key="index" data-index="{{index}}" data-data="{{item}}" >
+            <image src="{{fds[index]}}" />
+        </view>
+    </view>
+    <view bindtap="close"><image class="wx_iflogin_container_close" src="https://img.ok-bug.com/wechat/poetry_other/q_icon_close.png" /></view>
+
+</view>
+    <view wx:if="{{isShow}}" class="love" bindtap="show">
+        <image src="https://img.ok-bug.com/wechat/poetry_other/snow.png" />
+    </view>
+
+</view>

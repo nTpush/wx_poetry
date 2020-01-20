@@ -1,0 +1,7 @@
+{
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "ui-dialog": "../../components/Dialog/index",
+    "painter": "../../components/painter/painter"
+  }
+}

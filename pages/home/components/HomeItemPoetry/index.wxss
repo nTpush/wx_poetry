@@ -1,0 +1,55 @@
+
+.poetry {
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 2rpx 5rpx 0rpx rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #959595;
+}
+
+.title image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+
+.title_text {
+  font-size: 34rpx;
+  color: #646464;
+  margin-left: 10rpx;
+}
+
+.main_wrap .content {
+  font-size: 30rpx;
+  color: #3E3E3E;
+  white-space:nowrap;/* 规定文本是否折行 */  
+  overflow: hidden;/* 规定超出内容宽度的元素隐藏 */
+  text-overflow: ellipsis;
+}
+
+.main_wrap .author {
+  margin: 20rpx 0;
+  font-size: 32rpx;
+}
+
+.author .from {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #484848;
+}
+
+.deep_study {
+  background: #EF6747;
+  color:#fff;
+  font-size: 28rpx;
+  padding: 5rpx 12rpx;
+  border-radius: 8rpx;
+}

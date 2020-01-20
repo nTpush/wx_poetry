@@ -1,0 +1,203 @@
+.wx_iflogin_container {
+	width: 100%;
+	height: 120rpx;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 20rpx;
+	bottom: 200rpx;
+	opacity: 0;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #f5f5f5;
+	font-size: 36rpx;
+	justify-content: space-between;
+	z-index: 9999;
+	background-image: url(https://img.ok-bug.com/wechat/poetry_other/fdb.png);
+	background-size: 100% 100%;
+	border-bottom: 3px solid #629ded;
+}
+
+.if_show {
+	animation: t2bf 1s forwards;
+}
+.if_hide {
+	bottom: 0;
+	opacity: 1;
+	animation: t2b 1s forwards;
+	animation-delay: 1s;
+}
+@keyframes t2b {
+	0% {
+		bottom: 0;
+		opacity: 1;
+	}
+	100% {
+		bottom: -200rpx;
+		opacity: 0;
+	}
+}
+
+@keyframes t2bf {
+	0% {
+		bottom: -200rpx;
+		opacity: 0;
+	}
+	100% {
+		bottom: 0rpx;
+		opacity: 1;
+	}
+}
+
+.wx_iflogin_container_avatar {
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.wx_iflogin_container_close {
+	width: 50rpx;
+	height: 50rpx;
+	position: relative;
+	top: -35rpx;
+}
+
+.content_method {
+	display: flex;
+	width: 600rpx;
+	justify-content: space-between;
+}
+
+.content_method_item {
+	width: 90rpx;
+	height: 80rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	transform: scale(0);
+	opacity: 0;
+}
+.show:nth-child(4) {
+	animation: s2bf 0.5s forwards;
+	animation-delay: 0.4s;
+}
+
+.show:nth-child(2) {
+	animation: s2bf 0.5s forwards;
+	animation-delay: 0.8s;
+}
+
+.show:nth-child(3) {
+	animation: s2bf 0.5s forwards;
+	animation-delay: 0.2s;
+}
+
+.hiden:nth-child(4) {
+	transform: scale(1);
+	opacity: 1;
+	animation: s2b 0.5s forwards;
+	animation-delay: 0.4s;
+}
+
+.hiden:nth-child(2) {
+	transform: scale(1);
+	opacity: 1;
+	animation: s2b 0.5s forwards;
+	animation-delay: 0.8s;
+}
+
+.hiden:nth-child(3) {
+	transform: scale(1);
+	opacity: 1;
+	animation: s2b 0.5s forwards;
+	animation-delay: 0.2s;
+}
+
+@keyframes s2b {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+@keyframes s2bf {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.content_method_item image {
+	width: 100%;
+	height: 100%;
+}
+
+.tip {
+	position: relative;
+	top: 55rpx;
+	font-size: 30rpx;
+	color: #629ded;
+	letter-spacing: 5rpx;
+	font-weight: bolder;
+}
+
+.love {
+	position: fixed;
+	bottom: -100rpx;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	width: 80rpx;
+	height: 80rpx;
+	animation: ss 1s forwards;
+    animation-delay: 2s;
+    z-index: 9999999999999999999;
+}
+
+@keyframes ss {
+	0% {
+		bottom: -100rpx;
+	}
+
+	100% {
+		bottom: 20rpx;
+	}
+}
+
+.love image {
+	width: 100%;
+	height: 100%;
+	animation: ff 2s infinite;
+	position: relative;
+	transform: scale(1);
+	opacity: 0;
+	bottom: -5rpx;
+}
+
+@keyframes ff {
+	0% {
+		transform: scale(1);
+		opacity: 0.5;
+		bottom: -5rpx;
+	}
+	50% {
+		transform: scale(0.8);
+		opacity: 1;
+		bottom: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0.5;
+		bottom: -5rpx;
+	}
+}

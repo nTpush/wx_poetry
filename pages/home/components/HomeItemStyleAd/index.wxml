@@ -1,0 +1,6 @@
+<view class='ad' bindtap="dealOnClick">
+     <image class="adavice" src="{{data.img}}" mode="widthFix" />
+
+     <view class="text">{{data.desc}}</view>
+
+</view>

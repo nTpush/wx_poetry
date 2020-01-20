@@ -1,0 +1,8 @@
+<view>
+    <view class="hat_warp">
+        <image src="{{afterAvatar}}" catchtap="stop" bindtouchstart='timestart' bindtouchend='timeend' catchtap='saveImg' />
+    </view>
+    <view style="height:0;overflow:hidden">
+        <painter palette="{{template}}" bind:imgOK="onImgOK" bind:imgErr="onImgErr" />
+    </view>
+</view>

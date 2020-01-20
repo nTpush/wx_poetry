@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "Title": "../components/Title/index",
+    "IfLogin": "../components/IfLogin/index",
+    "EndR": "../components/End/index"
+  }
+}

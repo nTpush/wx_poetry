@@ -1,0 +1,171 @@
+page {
+  background-image: url(https://img.ok-bug.com/wechat/poetry_other/all_bg.png);
+  background-size: 100% 100%;
+}
+
+.user-info-box {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  font-size: 30rpx;
+  color: #F46C6D;
+}
+
+.method_way {
+  background: #F46C6D;
+  border-radius: 50rpx;
+  color: #fff;
+  padding: 8rpx 20rpx;
+}
+
+.content_main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.content_info {
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+.content_poetry {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+}
+
+.poetry_row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row_item {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 36rpx;
+  background: #fff;
+  padding: 20rpx;
+  margin: 10rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 10rpx 10rpx 15rpx rgba(0, 0, 0, 0.1);
+  color: #676767;
+}
+
+.err_words {
+  text-align: center;
+  font-size: 26rpx;
+  color: #e33102;
+  margin-top: 10rpx;
+}
+
+.process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.process .icon_info {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.process image {
+  width: 100%;
+  height: 100%;
+}
+
+.err_process {
+  width: 520rpx;
+  height: 30rpx;
+  background: #FF8056;
+  background-image: repeating-linear-gradient(70deg,
+      #FF5A24, #FF5A24 25rpx,
+      transparent 0, transparent 40rpx);
+  border-radius: 30rpx;
+  position: relative;
+}
+
+.rig_process {
+  width: 200rpx;
+  height: 30rpx;
+  background: #88C256;
+  background-image: repeating-linear-gradient(70deg,
+      #64AE25, #64AE25 25rpx,
+      transparent 0, transparent 40rpx);
+  border-radius: 30rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+
+.rate_info {
+  text-align: center;
+  font-size: 38rpx;
+  color: #1F1F1F;
+}
+
+.info_small {
+  color: #646464;
+  font-size: 30rpx;
+}
+
+.info_big {
+  font-weight: bold;
+  margin: 0 10rpx;
+}
+
+.border {
+  font-weight: bolder;
+  margin: 0 5rpx;
+  text-decoration: underline;
+}
+
+.err_info {
+  opacity: 0.5;
+}
+
+.right_info {
+  color: red;
+}
+
+.row_current {
+  position: relative;
+}
+
+.right_word {
+  position: absolute;
+  right: -40rpx;
+  top: -40rpx;
+  width: 50rpx;
+  height: 50rpx;
+  background: #fff;
+  font-size: 30rpx;
+  color: green;
+  font-weight: bolder;
+  border-radius: 50%;
+  padding: 5rpx;
+  line-height: 50rpx;
+  text-align: center;
+  box-shadow: 10rpx 10rpx 15rpx rgba(0, 0, 0, 0.3);
+}
+
+.all_right {
+  font-weight: bolder;
+}

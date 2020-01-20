@@ -1,0 +1,10 @@
+{
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "HomeItemStyle1": "./components/HomeItemStyle1/index",
+    "HomeItemStyle2": "./components/HomeItemStyle2/index",
+    "HomeItemStyleAd": "./components/HomeItemStyleAd/index",
+    "HomeItemPoetry": "./components/HomeItemPoetry/index",
+    "HomeItemTime": "./components/HomeItemTime/index"
+  }
+}

@@ -1,0 +1,42 @@
+<view>
+    <EndR wx:if="{{isResult}}"></EndR>
+    <view class="baseInfo">
+       <Title typeName="{{mapMode[modeType]}}" methodName="{{titlePage}}"></Title>
+    </view>
+    <IfLogin list="{{allMedthos}}"></IfLogin>
+    <Dialog id="rightDialog">
+        <view slot="content">
+            <RightDialog>恭喜你，答对了！</RightDialog>
+        </view>
+    </Dialog>
+
+
+     <Dialog id="wrongDialog">
+        <view slot="content">
+            <WrongDialog>抱歉，答错了</WrongDialog>
+        </view>
+    </Dialog>
+
+   <view class="main_content">
+     <view class="poetry">
+        <view class="poetry_row" wx:for="{{poetryData}}" wx:key="index" wx:for-index="index">
+            <view class="row_item " wx:for-index="iindex" wx:for="{{item.data}}" wx:for-item="iitem" wx:key="iindex">
+            <view class="row_current" wx:if="{{currentIndex == iitem.number}}">?</view>
+            <text wx:if="{{iitem.result === 0}}">?</text>
+            <text wx:else class="{{isResult? iitem.cc.word == iitem.word ? 'right_w' : 'wrong_w' :''}}">{{iitem.cc.word}}</text></view>
+        </view>
+     </view>
+    <view class="tip" style="opacity: {{!isResult ? 1: 0.3}}">
+        <text>请按顺序作答，如要修改， 请点击刷新按钮重答</text>
+        <text bindtap="reFlesh"  class="reflesh">刷新</text>
+    </view>
+
+    <view class="words">
+        <view class="words_content">
+            <view class="worda_item {{item.isChoose == 1 ? 'already_choose' :''}}" wx:for="{{chooseData}}" wx:key="index" wx:for-index="index"
+            data-index="{{index}}" data-data="{{item}}" bindtap="onChoose"
+            >{{item.word}}</view>
+        </view>
+    </view>
+   </view>
+</view>

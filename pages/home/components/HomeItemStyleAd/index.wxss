@@ -1,0 +1,24 @@
+.adavice {
+  width: 100%;
+}
+
+.ad {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  font-size: 30rpx;
+  background: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  text-align: center;
+  padding: 10rpx 0;
+  color: #797979;
+  letter-spacing: 10rpx;
+  font-weight: bolder;
+
+}

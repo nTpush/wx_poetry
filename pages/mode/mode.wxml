@@ -1,0 +1,17 @@
+<view class="content">
+    <view class="box" 
+       bindtap="goMethod"
+       wx:for="{{modes}}" wx:for-index="index" wx:key="index" data-data="{{item}}" style="background: {{item.mode_color}}">
+        <view class="title">{{item.mode_title}}</view>
+        <view class="info">{{item.mode_intro}}</view>
+        <view class="imageBox">
+            <image src="{{item.mode_image}}" />
+        </view>
+        <view class="lock" wx:if="{{item.mode_status === 0}}">
+            <image class="icon"  src="../../images/lock.png" />
+        </view>
+    </view>
+    <view class="footer">
+            
+    </view>
+</view>

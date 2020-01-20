@@ -1,0 +1,4 @@
+<view>
+    <view class="dialog_content">恭喜你，答对了！</view>
+    <view class="close">点击空白处即关闭弹框</view>
+</view>

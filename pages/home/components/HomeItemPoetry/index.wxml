@@ -1,0 +1,23 @@
+<view class='poetry' >
+     <view class="title">
+          <view wx:if="{{data.is_study === 1}}">
+               <image  src="../../../../images/study.png" />
+               <text class="title_text deep_study">深度学习</text>
+          </view>
+          <view wx:if="{{data.is_study === 2}}">
+               <image  src="../../../../images/read.png" />
+               <text class="title_text">仅赏析</text>
+          </view>
+
+          <view style="opacity:0">约1.5万人次</view>
+     </view>
+
+     <view class="main_wrap" bindtap="onGoDetail">
+
+          <view class="author">
+               <text>{{data.title}}</text>
+               <text class="from">{{data.author}}</text>
+          </view>
+          <view class="content">{{data.content}}</view>
+     </view>
+</view>

@@ -1,0 +1,18 @@
+<view id="index" >
+
+<image class="logo" src="https://img.ok-bug.com/wechat/poetry_banner/logo.png" mode="widthFix" />
+
+<view class="button_wrap" wx:if="{{isNeedLogin}}">
+<view class="p1">该程序申请获取以下授权：</view>
+<view class="p2">您的公开信息(微信昵称、头像等)</view>
+<button  class="login off" bindtap="onRefuse">拒 绝</button>
+<button
+    class="login on"
+    open-type="getUserInfo"
+    bindgetuserinfo="getUserInfo">允 许</button>
+
+<view class="p3">登录后可享受完整的服务体验</view>
+
+</view>
+
+</view>

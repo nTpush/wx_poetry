@@ -1,0 +1,9 @@
+
+.every_number {
+  color: #FF7D68;
+  margin: 0 10rpx;
+}
+
+.every_time {
+  color: #4B4B4B;
+}

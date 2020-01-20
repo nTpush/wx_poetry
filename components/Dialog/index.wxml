@@ -1,0 +1,6 @@
+<view class='wx_dialog_container' hidden="{{!isShow}}" animation="{{textLeftAnimation}}">
+  <view class="mark" style="opacity: {{isRun ? 1: 0}}" bindtap="hideDialog"></view>
+  <view class="content" style="top: {{upDown}};opacity: {{isRun ? 1: 0}}">
+    <slot name="content"></slot>
+  </view>
+</view>

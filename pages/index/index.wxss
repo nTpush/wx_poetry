@@ -1,0 +1,54 @@
+page {
+  background-image: url('https://img.ok-bug.com/wechat/poetry_banner/welcome.jpg');
+  background-size: 100% 100%;
+  text-align: center;
+
+}
+
+.logo {
+  width: 50%;
+  margin-top: 200rpx;
+}
+
+.button_wrap {
+  width: 100%;
+  height: 600rpx;
+  position: fixed;
+  bottom: 0;
+  background: rgba(255, 250, 255, 0.3);
+}
+
+.login {
+  width: 60%;
+  margin-top: 50rpx;
+  border: 0;
+  border-radius: 110rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.on {
+  background: #3DB060;
+}
+
+.off {
+  background: #A1A1A1;
+}
+
+.p1 {
+  font-size: 36rpx;
+  margin-top: 60rpx;
+  color: #04111E;
+}
+
+.p2 {
+  font-size: 32rpx;
+  margin-top: 10rpx;
+  color: #393939;
+}
+
+.p3 {
+  font-size: 30rpx;
+  color: #858585;
+  margin-top: 20rpx;
+}

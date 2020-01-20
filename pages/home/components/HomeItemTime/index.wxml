@@ -1,0 +1,7 @@
+<block wx:if="{{clock}}">
+     <text class="every_number">{{clock.hours}}</text> <text class="every_time">小时</text>  
+     <text class="every_number">{{clock.minutes}}</text> <text class="every_time">分</text> 
+     <text class="every_number">{{clock.seconds}}</text> <text class="every_time">秒</text> 
+</block>
+
+<text wx:else class="every_number">正在准备新的内容~</text>

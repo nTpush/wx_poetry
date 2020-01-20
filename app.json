@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/class/class",
+    "pages/poetry/poetry",
+    "pages/detail/detail",
+    "pages/mode/mode",
+    "pages/method/method",
+    "pages/st-choose/st-choose",
+    "pages/st-fill/st-fill",
+    "pages/st-find/st-find",
+    "pages/st-judge/st-judge",
+    "pages/st-word/st-word",
+    "pages/st-order/st-order",
+    "pages/st-istrue/st-istrue",
+    "pages/demo/index",
+    "pages/st-imgall/st-imgall"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2C2C2C",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

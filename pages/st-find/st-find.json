@@ -1,0 +1,11 @@
+{
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "Title": "../components/Title/index",
+    "IfLogin": "../components/IfLogin/index",
+    "Dialog": "../components/Dialog/index",
+    "WrongDialog": "../components/WrongDialog/index",
+    "RightDialog": "../components/RightDialog/index",
+    "EndR": "../components/End/index"
+  }
+}

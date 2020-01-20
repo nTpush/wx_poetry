@@ -1,0 +1,10 @@
+<view >
+    
+    <view class="dialog_content">抱歉，答错了</view>
+
+
+    
+
+    <view class="close">点击空白处即关闭弹框</view>
+  
+</view>

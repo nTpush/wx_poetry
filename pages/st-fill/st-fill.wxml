@@ -1,0 +1,46 @@
+<view>
+    <EndR wx:if="{{!isResult}}"></EndR>
+    <view class="baseInfo">
+       <Title typeName="{{mapMode[modeType]}}" methodName="{{titlePage}}"></Title>
+    </view>
+    <IfLogin list="{{allMedthos}}"></IfLogin>
+
+   <Dialog id="rightDialog">
+        <view slot="content">
+            <RightDialog>恭喜你，答对了！</RightDialog>
+        </view>
+    </Dialog>
+
+
+     <Dialog id="wrongDialog">
+        <view slot="content">
+            <WrongDialog>抱歉，答错了</WrongDialog>
+        </view>
+    </Dialog>
+     <view class="fill_container">
+            <view class="fill_info">
+            <view>{{poetry.title}}</view> 
+            <view>-</view>
+            <view wx:for="{{poetryArr}}" wx:for-index="index" wx:key="index" data-index="{{index}}" data-data="{{item}}" 
+            style="opacity:{{ item.isFirst ? 1: 0}}" class="{{item.show == 1 ? 'aa' : ''}} {{item.show == 4 ? 'wrong' : ''}} {{item.show == 3 ? 'right' : ''}}">{{item.poetry}}</view>
+        </view>
+     </view>
+     <view class="me" wx:if="{{poetryArr[currentPoetryIndex].show == 1}}">
+        <view class="fill_answer"> <image class="fill_me" src="{{meAvatars}}"/><text class="p1">请您作答</text> <text class="p2">（如完成请点击确认）</text></view>
+        <view class="fill_input">
+             <input  placeholder="点 击 并 输 入" bindinput="getInput" value="{{poetryDetail}}" />  
+             <view class="fill_sure" >
+               <text bindtap="onSubmit">确认</text>
+             </view>
+        </view>
+     </view>
+     <view class="me teacher" wx:else>
+        <view class="fill_answer"> <image class="fill_me" src="{{meAvatars}}"/>
+         <view wx:if="{{isResult}}">
+               <text class="p1"  wx:if="{{poetryArr[poetryArr.length-1].isFirst}}">老师正在为您批改...</text>
+                <text class="p1" wx:else>老师正在作答...</text>   
+         </view>
+         <view wx:else class="complete_result">完成批改</view>
+         </view>
+     </view>
+</view>

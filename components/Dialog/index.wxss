@@ -1,0 +1,23 @@
+.mark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  opacity: 0;
+  transition: all .2s;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  z-index: 99999999999999999;
+}
+
+.content {
+  /* width: 80%;
+  height: 300rpx; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  transition: all .3s;
+  z-index: 999999999999999;
+}

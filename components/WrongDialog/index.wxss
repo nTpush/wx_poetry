@@ -1,0 +1,14 @@
+.dialog_content {
+	background: url(https://img.ok-bug.com/wechat/poetry_other/dialog.png);
+	width: 700rpx;
+	height: 650rpx;
+	background-size: 100% 100%;
+	line-height: 600rpx;
+	text-align: center;
+}
+.close {
+	text-align: center;
+	color: #f5f5f5;
+	font-size: 30rpx;
+	margin-top: 30rpx;
+}

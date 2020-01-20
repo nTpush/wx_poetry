@@ -1,0 +1,16 @@
+<view class='home_item' >
+  <view class="title_wrap">
+    <view>{{data.className}}</view>
+    <view class="more" bindtap="onMore">更多 <image src="../../../../images/right.png" /></view>
+  </view>
+  <view class="item_wrap">
+    <scroll-view class="nva_scorll" scroll-x scroll-with-animation >
+      <view style="width: {{data.modules.length * 150}}rpx" class="nav_wrap">
+        <view wx:for="{{data.modules}}" wx:for-index="index" wx:key="index" class="item" bindtap="toClass" data-data="{{item}}">
+          <image wx:if="{{item.img}}" class="item_img" src="{{item.img}}" />
+          <view class="name">{{item.name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+    </view>
+</view>

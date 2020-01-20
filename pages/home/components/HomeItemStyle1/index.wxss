@@ -1,0 +1,65 @@
+
+
+.home_item {
+  width: 100%;
+  background: #fff;
+  padding: 30rpx;
+  box-sizing: border-box;
+  padding-right: 20rpx;
+  padding-bottom: 10rpx;
+  border-radius: 10rpx;
+}
+.title_wrap {
+  display: flex;
+  justify-content: space-between;
+  font-size: 34rpx;
+}
+
+.more {
+  color: #8a8a8a;
+}
+
+.more image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-top: -4rpx;
+}
+
+.nav_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.nva_scorll {
+  height: 200rpx;
+  margin-top: 30rpx;
+}
+
+
+.item_img {
+  width: 180rpx;
+  height: 120rpx;
+  border-radius: 20rpx;
+}
+
+.name {
+  font-size: 32rpx;
+  color: #222;
+}
+.item {
+  position: relative;
+}
+.number {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50rpx;
+  font-size: 20rpx;
+  color:#fff;
+
+  right: 20rpx;
+  top: 70rpx;
+  padding: 5rpx 13rpx;
+
+}

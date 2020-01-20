@@ -1,0 +1,36 @@
+<view>
+    <view class="search_wrap ">
+        <view class="input_wrap"><input  placeholder="请输入关键字" maxlength="11" type="text" bindinput="getInput" value="{{keyword}}" />
+            <view class="close" bindtap="onClose">
+                <image src="../../images/close.png" />
+            </view>
+         </view> 
+        <view class="reset" bindtap="onSearch">查 询</view>
+    </view>
+    <view class="poetry_wrap">
+        <view class="info">
+            <view>{{className}}</view>
+            <view class="total">共{{total}}首</view>
+        </view>
+        <view class="main">
+            <view wx:for="{{list}}" wx:for-index="index" wx:key="index" data-data="{{item}}" class="item" bindtap="dealToDetail">
+                <view class="base">
+                    <view wx:if="{{item.is_study === 2}}"><image class="base_icon" src="../../images/read.png" /> <text>仅 赏 析</text></view>
+                    <view wx:if="{{item.is_study === 1}}"><image class="base_icon" src="../../images/study.png" /> <text class="study">深 度 学 习</text></view>
+                    <view class="detail"><text class="name">{{item.poetry_title}}</text> 
+                    
+                    <view><text class="author">{{item.author}}</text> - <text class="home">{{item.home}}</text></view></view>
+                </view>
+                <view class="content">
+                    <text>{{item.poetry_content}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="loading_wrap" wx:if="{{isShowLoading}}">
+          <image src="../../images/loading.gif" class="loading" mode="widthFix" />
+        </view>
+        <view wx:if="{{!hasMoreData}}" class="all">没有更多了~</view>
+    </view>
+
+    <image bindtap="onGoTop" src="../../images/top.jpg" class="top" style="bottom: {{isShowTop ? '50rpx' : '-130rpx'}}; opacity: {{isShowTop ? 1 : 0}}" />
+</view>

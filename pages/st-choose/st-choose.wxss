@@ -1,0 +1,76 @@
+page {
+  background-color: #f5f5f5;
+  background-image: url(https://img.ok-bug.com/wechat/poetry_other/all_bg.png);
+  background-size: 100% 100%;
+}
+
+.content {
+  padding: 0rpx 50rpx;
+}
+
+.poetry {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40rpx 0;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 40rpx;
+  box-shadow: 10rpx 10rpx 15rpx rgba(0, 0, 0, 0.1);
+}
+
+.poetry .item {
+  position: relative;
+  margin-bottom: 20rpx;
+  letter-spacing: 10rpx;
+  color: #333;
+  font-size: 34rpx;
+  /* width: 50%; */
+}
+
+.poetry .item .mark {
+  text-align: center;
+  color: #ccc;
+  border-bottom: 2px solid #6a6a6a;
+  width: 70%;
+  margin: 0rpx auto;
+  padding: 10rpx 0;
+
+}
+
+.poetry .item .height {
+  height: 20rpx;
+}
+
+.chooseItem {
+  margin-top: 40rpx;
+}
+
+.chooseItem .item {
+  margin-bottom: 30rpx;
+  letter-spacing: 10rpx;
+  color: #6A6A6A;
+  font-size: 36rpx;
+  background: #fff;
+  padding: 20rpx 30rpx;
+  position: relative;
+  border-radius: 10rpx;
+  box-shadow: 10rpx 10rpx 15rpx rgba(0, 0, 0, 0.1);
+}
+
+.chooseItem .item .myStudy {
+  position: absolute;
+  top: 20rpx;
+  right: 10rpx;
+}
+
+.chooseAsk {
+  width: 40rpx;
+  height: 40rpx;
+  opacity: 0.6;
+}
+
+.chooseItem .item .myStudy image {
+  width: 50rpx;
+  height: 50rpx;
+}

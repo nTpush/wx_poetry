@@ -1,0 +1,4 @@
+<view class='wx_end_container' bindtap="GoHome">
+    <view class="line"></view>
+   <image class="gg" src="https://img.ok-bug.com/wechat/poetry_other/icon_back.png" />
+</view>

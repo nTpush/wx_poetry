@@ -1,0 +1,17 @@
+<template name="articleListItem">
+  <view class="article__list__item">
+    <view class="article__list__item__image">
+      <image src="https://blog-static-ntpush.oss-cn-beijing.aliyuncs.com/app/4.jpg"></image>
+    </view>
+     <view class="article__list__item__info">
+     <view class="article__list__item__info__title">{{title}}</view>  
+     <view class="article__list__item__info__created">{{created_at}}</view>
+    
+     <view class="article__list__item__info__author">
+      <text>作者：{{author}}</text>
+      <view>{{mate_id[0].name}}</view>
+     </view> 
+    </view>
+   
+  </view>
+</template>

@@ -1,0 +1,6 @@
+<template name="classArticle">
+  <view class="class__article">
+    <image src="{{type}}"></image>
+    <text>{{name}}</text>
+  </view>
+</template>

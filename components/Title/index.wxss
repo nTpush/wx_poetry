@@ -1,0 +1,15 @@
+.wx_title_container {
+  color: #fff;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.wx_title_container_type {
+  height: 60rpx;
+  font-size: 36rpx;
+}
+
+.wx_title_container_method {
+  font-size: 30rpx;
+  letter-spacing: 10rpx;
+}

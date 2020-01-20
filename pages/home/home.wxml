@@ -1,0 +1,37 @@
+<view id="home">
+    <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+    <block wx:for="{{HD.banners}}" wx:for-index="index" wx:key="index">
+        <swiper-item>
+        <image src='{{item.img}}' class='u-img-slide' mode='aspectFill'></image>
+        </swiper-item>
+    </block>
+    </swiper>
+
+    <view class="wrap">
+        <view class="link_wrap">
+            <view class="item" style="opacity:0.2"> <image src="../../images/foot.png" />  我的足迹</view>
+            <view class="item" bindtap="onGoClass"> <image src="../../images/class.png"  />  全部分类</view>
+        </view>
+        <view class="main_wrap" >
+            <view wx:for="{{HD.classes}}" wx:for-index="index" wx:key="index" class="item">
+                <HomeItemStyle1 bind:dealOnMore="dealOnMore" wx:if="{{item.type === 1 && item.shape === 1}}" data="{{item}}" bind:dealToClass="dealToClass" />
+                <HomeItemStyleAd wx:if="{{item.type === 2}}" data="{{item}}" bind:dealOnClick="dealOnClick" />
+                <HomeItemStyle2 bind:dealOnMore="dealOnMore" wx:if="{{item.type === 1 && item.shape === 2}}" data="{{item}}" bind:dealToClass="dealToClass" />
+            </view>
+        </view>
+
+        <view class="every_wrap">
+            <view class="every_title" wx:if="{{HD.poetrys.time}}">
+                <image src="../../images/every.png" /> 每日必学  <text class="rest">余</text>  <HomeItemTime time="{{HD.poetrys.time}}" />
+            </view>
+
+            <view class="every_main">
+                 <view wx:for="{{HD.poetrys.data}}" wx:for-index="index" wx:key="index" class="item">
+                    <HomeItemPoetry data="{{item}}" bind:dealGoDetail="dealGoDetail" />
+                 </view>
+            </view>
+        </view>
+        <view class="footer">—— 每天都要有新的收获 ——</view>
+    </view>
+   
+</view>

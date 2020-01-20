@@ -1,0 +1,27 @@
+<view class="class">
+    <view class="left">1</view>
+    <view class="left_fix">
+        <view wx:for="{{list}}" wx:for-index="index" wx:key="index" data-key="{{item}}" class="item {{list[currentIndex].s_id === item.s_id ? 'active' : ''}}" bindtap="onChangeClass">
+            <view>{{item.s_name}}</view>
+        </view>
+    </view>
+
+    <view class="right">
+        <view class="img_wrap">
+            <image class="class_img" src="{{list[currentIndex].s_image}}" />
+        </view>
+        <view class="name_wrap">
+           <view class="text_left">{{list[currentIndex].child.length}}组</view>
+           <view class="text_right">{{list[currentIndex].s_name}}</view>
+        </view>
+
+        <view class="child_wrap">
+            <view class="item" wx:for="{{list[currentIndex].child}}" wx:for-index="index" wx:key="index" data-data="{{item}}" bindtap="dealToClass">
+                <view class="item_img">
+                    <image src="{{item.img}}" />
+                </view>
+                <view>{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+</view>

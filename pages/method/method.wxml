@@ -1,0 +1,21 @@
+<!--pages/method/method.wxml-->
+<view class="container">
+    
+    <view class="methoBox">
+        <view 
+        bindtap="goStudy"
+        style="background-image: url({{item.method_image}})"
+        class="item" wx:for="{{methods}}" wx:for-index="index" wx:key="index" data-data="{{item}}">
+            <view class="title">{{item.method_title}}</view>
+            <view class="tip" style="opacity:0">使用该方式已学习1999次</view>
+            <view class="buttonBox">
+                <view>立即出发</view>
+            </view>
+            <view class="lock" wx:if="{{item.method_status === 0}}">
+                <image class="icon" src="../../images/lock.png" />
+            </view>
+        </view>
+    </view>
+
+    <view class="lala">- 更多精彩有趣的模式正在创作 -</view>
+</view>

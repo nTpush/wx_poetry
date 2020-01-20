@@ -1,0 +1,24 @@
+page {
+  background: url(https://img.ok-bug.com/wechat/poetry_other/fillblank_bg.png);
+  background-size: 100% 100%;
+}
+
+.user-info-box {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  font-size: 30rpx;
+  color: #F46C6D;
+}
+
+.method_way {
+  background: #F46C6D;
+  border-radius: 50rpx;
+  color: #fff;
+  padding: 8rpx 20rpx;
+}

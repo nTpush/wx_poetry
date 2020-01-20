@@ -1,0 +1,15 @@
+.class__article {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  padding: 20rpx 0;
+  border-right: 1px solid #F5F5F5;
+  
+}
+.class__article image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.class__article text {
+  display: block;
+}

@@ -1,0 +1,70 @@
+<view class="detail_wrap">
+   
+   <view class="wrap poetry">
+      <view class="title">
+         <text>古诗区</text>
+         <view class="button" wx:if="{{poetry.is_study === 1}}" bindtap="goMode">趣 背 诗</view>
+         <view class="desc"></view>
+      </view>
+      <view class="content">
+         <view class="t">{{poetry.title}}</view>
+         <view class="author">
+            <text class="b">{{poetry.author.name}} {{poetry.home}}</text>
+         </view>
+         <view><text class="main">{{poetry.content}}</text></view>
+
+         <view class="heart">
+            <image src="../../images/love.png" />
+         </view>
+      </view>
+   </view>
+   <view class="wrap authorInfo">
+      <view class="title"><text>诗之作者</text></view>
+      <view>
+         <view class="tt">{{poetry.author.name}} - {{poetry.home}}</view>
+         <view><image wx:if="{{poetry.author.img}}"  class="authorImg" src="{{poetry.author.img}}" />
+            <rich-text nodes="{{poetry.author.intro}}"></rich-text>
+         </view>
+         <view class="more" wx:if="{{!author.aa.length}}">
+            <text bindtap="authorMore">了解更多</text>
+         </view>
+          <view class="xx" wx:else>
+            <view class="flexChoose">
+               <scroll-view scroll-x scroll-with-animation>
+                  <view class="itemChoose" style="width: {{author.aa.length * 200}}rpx">
+                     <view 
+                     class="{{authorIndex === index ? 'active' : ''}} item"
+                     wx:for="{{author.aa}}" wx:for-index="index" wx:key="index" data-index="{{index}}" data-data="{{item}}" bindtap="onClickItemAuthor"> {{item.title}} </view>
+                  </view>
+               </scroll-view>
+            </view>
+            <view class="poetryDetail">
+            <rich-text nodes="{{author.aa[authorIndex].content}}"></rich-text>
+            </view>
+            <view class="more" wx:if="{{author.aa.length}}">
+               <text bindtap="authorLess">收起</text>
+            </view>
+         </view>
+      </view>
+   </view>
+   <view class="wrap expand" wx:if="{{poetry.xx.length}}">
+      <view class="title right"><text>诗之分析</text></view>
+      <view class="xx">
+         <view class="flexChoose">
+            <scroll-view scroll-x scroll-with-animation>
+               <view class="itemChoose" style="width: {{poetry.xx.length * 200}}rpx">
+                  <view 
+                  class="{{poetryIndex === index ? 'active' : ''}} item"
+                  wx:for="{{poetry.xx}}" wx:for-index="index" wx:key="index" data-index="{{index}}" data-data="{{item}}" bindtap="onClickItem"> {{item.title}} </view>
+               </view>
+            </scroll-view>
+         </view>
+         <view class="poetryDetail">
+         <rich-text nodes="{{poetry.xx[poetryIndex].content}}"></rich-text>
+         </view>
+      </view>
+   </view>
+   <view class="footer">- 每 天 进 步 一 点 点 -</view>
+
+    <image bindtap="onGoTop" src="../../images/top.jpg" class="top" style="bottom: {{isShowTop ? '50rpx' : '-130rpx'}}; opacity: {{isShowTop ? 1 : 0}}" />
+</view>

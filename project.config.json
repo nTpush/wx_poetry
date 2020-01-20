@@ -1,0 +1,161 @@
+{
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"appid": "wx8f76e42adc38a36c",
+	"projectname": "%E9%81%87%E8%A7%81Code",
+	"libVersion": "2.2.5",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"id": -1,
+					"name": "detail",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "查询页",
+					"pathName": "pages/search/search",
+					"query": "cId=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/class/class",
+					"pathName": "pages/class/class",
+					"query": "id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/poetry/poetry",
+					"pathName": "pages/poetry/poetry",
+					"query": "id=21",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/poetry/poetry",
+					"pathName": "pages/poetry/poetry",
+					"query": "id=21",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "author_id=4&poetry_id=c90ff9ea5a71",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mode/mode",
+					"pathName": "pages/mode/mode",
+					"query": "author_id=10&poetry_id=e46c43d13b97",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/method/method",
+					"pathName": "pages/method/method",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "pages/st-choose/st-choose",
+					"pathName": "pages/st-choose/st-choose",
+					"query": "author_id=237&poetry_id=ee72baa043c8&study_mode=2&study_method=1",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "pages/st-order/st-order",
+					"pathName": "pages/st-order/st-order",
+					"query": "author_id=36&poetry_id=21c484c79935&study_mode=2&study_method=3",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/demo/index",
+					"pathName": "pages/demo/index",
+					"query": "author_id=17&poetry_id=5775c79bcd34&study_mode=2&study_method=1",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "pages/st-fill/st-fill",
+					"pathName": "pages/st-fill/st-fill",
+					"query": "author_id=36&poetry_id=21c484c79935&study_mode=2&study_method=3",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "pages/st-imgall/st-imgall",
+					"pathName": "pages/st-imgall/st-imgall",
+					"query": "author_id=237&poetry_id=ee72baa043c8&study_mode=2&study_method=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/st-word/st-word",
+					"pathName": "pages/st-word/st-word",
+					"query": "author_id=36&poetry_id=21c484c79935&study_mode=2&study_method=3",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "pages/st-find/st-find",
+					"pathName": "pages/st-find/st-find",
+					"query": "author_id=237&poetry_id=ee72baa043c8&study_mode=2&study_method=5",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "shareKey=20",
+					"scene": null
+				}
+			]
+		}
+	}
+}

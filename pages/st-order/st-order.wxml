@@ -1,0 +1,75 @@
+<view>
+<EndR wx:if="{{isResult}}"></EndR>
+<Dialog id="rightDialog">
+        <view slot="content">
+            <RightDialog>恭喜你，答对了！</RightDialog>
+        </view>
+    </Dialog>
+
+
+     <Dialog id="wrongDialog">
+        <view slot="content">
+            <WrongDialog>抱歉，答错了</WrongDialog>
+        </view>
+    </Dialog>
+<view style="position: relative; z-index: 199;">
+	
+	<!-- 监测移动事件 -->
+	<view class="touchView" style="height:{{scrollPosition.scrollViewHeight}}px;" catchlongpress="longpressfuc" 
+		  catchtouchmove="{{movableViewPosition.data.is_complete?'':'draggleTouch'}}" catchtouchend="{{movableViewPosition.data.is_complete?'':'draggleTouch'}}">
+	</view>
+	<!-- 用于展示给用户的移动item -->
+	<movable-area class="moveable_row move_row {{movableViewPosition.className}}"
+				  style="height: {{scrollPosition.scrollViewHeight}}px;">
+		<movable-view style="height: {{scrollPosition.everyOptionCell}}px; width: 100%;"
+					  direction="vertical" x="{{movableViewPosition.x}}" y="{{movableViewPosition.y}}"
+					  inertia="false" damping="9999"  friction="9999">
+			<view class="edit_row edit_row_show {{movableViewPosition.data.is_complete?'completed':''}}">
+				<view class="edit_row_left">
+					<view class="edit_col1" data-id="{{movableViewPosition.data.id}}" bindtap="selectOption">
+						<image src="../../images/love.png"></image>
+					</view>
+					<view class="edit_col2">
+						<view class="secname">{{movableViewPosition.data.title}}</view>
+					</view>
+				</view>
+
+
+				
+			</view>
+		</movable-view>
+	</movable-area>
+	
+	<!-- 页面card -->
+	<scroll-view class="edit_row_holder" scroll-y="{{scrollPosition.scrollY}}"
+				 style="height: {{scrollPosition.scrollViewHeight}}px;" bindscroll="bindscroll"  bindscrolltolower="scrolltolower">
+		<!-- 用户信息 start -->
+		<view class="user-info-box">
+			<view class="baseInfo">
+				<Title typeName="{{mapMode[modeType]}}" methodName="{{titlePage}}"></Title>
+			</view>
+			<view class="method_tip">长按 <image src="../../images/love.png"></image> 拖动排序</view>
+		</view>
+		<IfLogin list="{{allMedthos}}"></IfLogin>
+		<!-- 用户信息 end -->
+		<block wx:for="{{optionsListData}}" wx:key="id">
+			<view class="edit_row  {{item.selectClass}} {{item.show_delet?'show-delet':''}} {{item.is_complete?'completed':''}}" data-index="{{index}}" bindtouchmove="handletouchmove" bindtouchstart="handletouchstart" bindtouchend="handletouchend" animation="{{animation_flag == index ? animationData :''}}">
+				<view class="test" wx:if="{{item.selectClass == 'dragSelected'}}"></view>
+				<view class="edit_row_left" bindtap="{{item.is_extend || item.style_type == 3 ? 'goUrl':''}}" data-url="{{item.url}}" data-id="{{item.id}}" data-status="{{item.is_complete?'0':'1'}}" data-index="{{index}}">
+					<view class="edit_col1" data-id="{{item.id}}">
+						<image src="../../images/love.png"></image>
+					</view>
+					<view class="edit_col2">
+						<view class="secname">{{item.title}}</view>
+					</view>
+				<view class="show_result" wx:if="{{isResult}}">
+					<image wx:if="{{item.id == index + 1}}" src="../../images/icon_right.png" />
+                    <image wx:else src="../../images/icon_wrong.png" />
+				</view>
+				</view>	
+			</view>
+		</block>
+	</scroll-view>
+</view>
+<view class="onSubmit" bindtap="onSubmit" wx:if="{{isFirst}}">确 认 评 分</view>
+</view>
